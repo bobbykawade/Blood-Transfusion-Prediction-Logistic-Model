@@ -7,20 +7,20 @@ from PIL import Image
 
 
 
-st.markdown("<h1 style='text-align: center; color: #d7385e ;'><strong><u>Predict Blood Donation for Future Expectancy</u></strong></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #d7385e ;'><strong><u>Predict Blood Donation for Future</u></strong></h1>", unsafe_allow_html=True)
 
 image = Image.open('donate.jpg')
 st.image(image,width=700)
 
 st.sidebar.markdown("<h1 style='text-align: center; color:#d7385e ;'><strong><u>Specify Input Parameters</u></strong></h1>", unsafe_allow_html=True)
     
-st.markdown("Forecasting blood supply is a serious and recurrent problem for blood collection managers: in January 2019, Nationwide, the Red Cross saw 27,000 fewer blood donations over the holidays than they see at other times of the year. Machine learning can be used to learn the patterns in the data to help to predict future blood donations and therefore save more lives.")
+st.markdown("Forecasting blood supply is a serious and recurrent problem for blood collection managers: in January 2019, Nationwide, they saw 27,000 fewer blood donations over the holidays than they see at other times of the year.")
 st.markdown("Understanding the Parameters -")
-st.markdown("(Recency - months since the last donation)")
-st.markdown("(Frequency - total number of donations)")
-st.markdown("(Monetary - total blood donated in c.c.)")
-st.markdown("(Time - months since the first donation)")
-st.markdown("Target - (1 stands for donating blood, 0 stands for not donating blood)")
+st.markdown("(Recency - Months since the Last donation)")
+st.markdown("(Frequency - Total Number of Donations)")
+st.markdown("(Monetary - Total Blood Donated in C.C.)")
+st.markdown("(Time - Months Since the First Donation)")
+st.markdown("Target - (1 stands for Donating Blood, 0 stands for Not Donating Blood)")
 
 
 
