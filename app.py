@@ -7,7 +7,7 @@ from PIL import Image
 
 
 
-st.markdown("<h1 style='text-align: center; color: #d7385e ;'><strong><u>Predict Blood Transfusion with Logistic Regression</u></strong></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #09ab3b ;'><strong><u>Predict Blood Transfusion with Logistic Regression</u></strong></h1>", unsafe_allow_html=True)
 
 image = Image.open('blood.jpg')
 st.image(image,width=700)
