@@ -52,10 +52,13 @@ We now know that we are working with a typical CSV file (i.e., the delimiter is 
 
 Let's briefly return to our discussion of RFM model. RFM stands for Recency, Frequency and Monetary Value and it is commonly used in marketing for identifying your best customers. In our case, our customers are blood donors.
 
-RFMTC is a variation of the RFM model. Below is a description of what each column means in our dataset:
 
-- R (Recency - months since the last donation) - F (Frequency - total number of donation) 
-- - M (Monetary - total blood donated in c.c.) - T (Time - months since the first donation) 
+# RFMTC is a variation of the RFM model. Below is a description of what each column means in our dataset:
+
+- R (Recency - months since the last donation)
+- F (Frequency - total number of donation)
+- M (Monetary - total blood donated in c.c.)
+- T (Time - months since the first donation)
 - a binary variable representing whether he/she donated blood in March 2007 (1 stands for donating blood; 0 stands for not donating blood)
 
 
