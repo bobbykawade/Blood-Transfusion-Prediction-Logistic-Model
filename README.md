@@ -3,7 +3,8 @@
 # Overview
 
 Forecasting blood supply is a serious and recurrent problem for blood collection managers: in January 2019, "Nationwide, the Red Cross saw 27,000 fewer blood donations over the holidays than they see at other times of the year." Machine learning can be used to learn the patterns in the data to help to predict future blood donations and therefore save more lives.
-In this Project, you will work with data collected from the donor database of Blood Transfusion Service Center in Hsin-Chu City in Taiwan. The center passes its blood transfusion service bus to one university in Hsin-Chu City to gather blood donated about every three months. The dataset, obtained from the UCI Machine Learning Repository, consists of a random sample of 748 donors. Your task will be to predict if a blood donor will donate within a given time window. You will look at the full model-building process: from inspecting the dataset to using the TPOT library to automate your Machine Learning pipeline.
+
+In this Project, we will work with data collected from the donor database of Blood Transfusion Service Center in Hsin-Chu City in Taiwan. The center passes its blood transfusion service bus to one university in Hsin-Chu City to gather blood donated about every three months. The dataset, obtained from the UCI Machine Learning Repository, consists of a random sample of 748 donors. Our task will be to predict if a blood donor will donate within a given time window. We will look at the full model-building process: from inspecting the dataset to using the TPOT library to automate your Machine Learning pipeline.
 
 
 # Project Tasks
@@ -33,7 +34,7 @@ The data is stored in datasets/transfusion.data and it is structured according t
 1. Inspecting transfusion.data file
 
 
-Blood transfusion saves lives - from replacing lost blood during major surgery or a serious injury to treating various illnesses and blood disorders. Ensuring that there's enough blood in supply whenever needed is a serious challenge for the health professionals. According to WebMD, "about 5 million Americans need a blood transfusion every year". 
+Blood transfusion saves lives - from replacing lost blood during major surgery or a serious injury to treating various illnesses and blood disorders. Ensuring that there's enough blood in supply whenever needed is a serious challenge for the health professionals. According to WebMD, "about 5 million Americans need a blood transfusion every year".
 
 Our dataset is from a mobile blood donation vehicle in Taiwan. The Blood Transfusion Service Center drives to different universities and collects blood as part of a blood drive. 
 
@@ -50,8 +51,14 @@ We now know that we are working with a typical CSV file (i.e., the delimiter is 
 3. Inspecting transfusion DataFrame
 
 Let's briefly return to our discussion of RFM model. RFM stands for Recency, Frequency and Monetary Value and it is commonly used in marketing for identifying your best customers. In our case, our customers are blood donors.
+
 RFMTC is a variation of the RFM model. Below is a description of what each column means in our dataset:
-- R (Recency - months since the last donation) - F (Frequency - total number of donation) - M (Monetary - total blood donated in c.c.) - T (Time - months since the first donation) - a binary variable representing whether he/she donated blood in March 2007 (1 stands for donating blood; 0 stands for not donating blood)  
+
+- R (Recency - months since the last donation) - F (Frequency - total number of donation) 
+- - M (Monetary - total blood donated in c.c.) - T (Time - months since the first donation) 
+- a binary variable representing whether he/she donated blood in March 2007 (1 stands for donating blood; 0 stands for not donating blood)
+
+
 It looks like every column in our DataFrame has the numeric type, which is exactly what we want when building a machine learning model. Let's verify our hypothesis.
 
 
@@ -68,11 +75,13 @@ We want to predict whether or not the same donor will give blood the next time t
 
 The model for this is a binary classifier, meaning that there are only 2 possible outcomes:
 
-a. 0 - the donor will not give blood 
+a. 0 - the donor will not give blood
 b. 1 - the donor will give blood
 
 Target incidence is defined as the number of cases of each individual target value in a dataset. 
+
 That is, how many 0s in the target column compared to how many 1s? 
+
 Target incidence gives us an idea of how balanced (or imbalanced) is our dataset.
 
 
