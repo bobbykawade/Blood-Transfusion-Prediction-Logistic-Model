@@ -79,6 +79,7 @@ We want to predict whether or not the same donor will give blood the next time t
 The model for this is a binary classifier, meaning that there are only 2 possible outcomes:
 
 a. 0 - the donor will not give blood
+
 b. 1 - the donor will give blood
 
 Target incidence is defined as the number of cases of each individual target value in a dataset. 
